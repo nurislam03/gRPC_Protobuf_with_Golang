@@ -23,6 +23,7 @@ func main() {
 
 	ctx := context.Background()
 
+	// addition
 	response, err := client.Add(ctx, req)
 	if err != nil {
 		erro := err.Error()
