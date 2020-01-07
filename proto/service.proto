@@ -1,4 +1,4 @@
-syntax = "proto3"
+syntax = "proto3";
 
 package proto;
 
@@ -12,6 +12,6 @@ message Response {
 }
 
 service AddService {
-    rpc Add(Request) returns (Response)
-    rpc Subtract(Request) returns (Response)
+    rpc Add(Request) returns (Response) {}
+    rpc Subtract(Request) returns (Response) {}
 }
