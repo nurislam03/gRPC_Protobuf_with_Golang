@@ -5,7 +5,11 @@ import (
 	"net"
 
 	"github.com/nurislam03/gRPC_Protobuf_with_Golang/proto"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/reflection"
 )
+
+type server struct{}
 
 func main() {
 	listener, err := net.Listen("tcp", ":4040")
